@@ -1,0 +1,53 @@
+.clear {
+	clear: both;
+}
+
+.warning-info {
+	margin-left: 40px;
+}
+
+.f-right {
+	float: right;
+}
+
+.f-left {
+	float: left;
+}
+
+.navbar-i {
+	margin: 0 10px 0 0 ;
+}
+
+.tip-i {
+	margin: 0 5px 0 10px ;
+}
+
+.page {
+	background: -moz-linear-gradient(center top , #F8F8F9, #E6E6E8) repeat scroll 0 0 transparent;
+    border: 1px solid #BBBBBB;
+    border-radius: 3px 3px 3px 3px;
+    color: #666666 !important;
+    cursor: pointer;
+    display: block;
+    font: 14px/22px "Helvetica Neue",Arial,sans-serif;
+    height: 20px;
+    margin: 20px 0 0;
+    padding: 10px 1px;
+    text-align: center;
+    text-decoration: none !important;
+    text-shadow: 0 1px 0 #FFFFFF;
+    vertical-align: middle;
+    outline: medium none;
+}
+
+.blog-tag {
+	margin: 10px;
+}
+
+.pre-next-up {
+	margin-bottom: 35px;
+}
+
+.pre-next-down {
+	margin-top: 35px;
+}

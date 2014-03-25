@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-CN"> 
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>首页</title>
+	<!-- ****************************************** 网站头标 ***************************************-->
+	<link href="img/icon/favicon.ico" rel="shortcut icon">
+	<!-- ******************************************* CSS *******************************************-->
+	<link type="text/css" href="plugin/bootstrap/css/bootstrap.css" rel="stylesheet" />
+	<link type="text/css" href="plugin/bootstrap/css/bootstrap-responsive.css" rel="stylesheet" />
+	<link type="text/css" href="css/vernon-unit.css" rel="stylesheet" />
+	<link type="text/css" href="css/vernon-main.css" rel="stylesheet" />
+	<!-- ******************************************* JS *******************************************-->
+	<script type="text/javascript" src="js/jquery-1.8.1.js"></script>
+</head>
+<body class="user-style-vernon">
+	<!-- 页头 -->
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner topbar">
+			<div class="container header-inner">
+				<div class="nav-collapse collapse">
+					<form action="" class="navbar-search pull-left">
+	                    <input type="text" placeholder="输入关键字..." class="search-query span5">
+	                </form>
+	                
+					<ul class="nav">
+						<li class="active">
+							<a href="index.html">
+								<span>
+									<i class="icon-home"></i>
+								</span>
+								<span class="text">主页</span>
+							</a>
+						</li>
+						<li class="">
+							<a href="blog/tag_square_list.html">
+								<span>
+									<i class="icon-tags"></i>
+								</span>
+								<span class="text">标签广场</span>
+							</a>
+						</li>
+					</ul>
+					
+				    <!-- Button to trigger modal -->
+	    			<a href="#myModal" role="button" class="btn btn-info" data-toggle="modal">建议</a>
+	     
+				    <!-- Modal -->
+				    <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					    <div class="modal-header">
+						    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+						    <h3 id="myModalLabel">写下您的建议</h3>
+					    </div>
+					    <div class="modal-body">
+					    	<textarea rows="3" class="suggest-content"></textarea>
+					    </div>
+					    <div class="modal-footer">
+						    <button class="btn" data-dismiss="modal" aria-hidden="true">关闭</button>
+						    <button class="btn btn-primary">保存</button>
+					    </div>
+				    </div>
+					
+				</div>
+			</div>
+		</div>
+	</div> 
+	<!-- 正文 -->
+	<div class="wrapper">
+			<div style="position:absolute ;left: 50px;">
+				<script charset="Shift_JIS" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.js"></script>
+			</div>
+			<div class="module author-info">
+			   <img class="profile-picture" src="img/author.jpeg">
+			   <div class="profile-header-inner">
+			   		<h1 class="fullname">Vernon</h1>
+			   		<h2 class="username">
+		                  <span class="screen-name">没事儿了,就找点事情做~</span>
+		            </h2>
+		            <p class="bio ">Java Programmer ...</p>
+			   </div>
+			</div>
+			<div class="alert alert-warning">
+			    <button class="close" data-dismiss="alert" type="button">×</button>
+				<strong>温馨提示:</strong>
+				<div class="warning-info">你有5条信息未看,请刷新页面!</div> 
+			</div>
+	
+    		<!-- 左边 -->
+    		<div class="dashboard">
+    			<ul class="nav nav-pills nav-stacked module">
+					<li class="line"><a class="active" href="#"><i class="icon-repeat navbar-i"></i>全部动态<i class="icon-chevron-right f-right"></i></a></li>
+				  	<li class="line"><a href="#"><i class="icon-edit navbar-i"></i>技术笔记</a></li>
+				  	<li class="line"><a href="#"><i class="icon-globe navbar-i"></i>其他</a></li>
+				</ul>
+					
+				<ul class="nav nav-pills nav-stacked module">
+					  <li class="line"><a href="blog/tag_square_list.html"><i class="icon-tags navbar-i"></i>标签广场</a></li>
+					  <li class="line"><a href="javascript:;"><i class="icon-user navbar-i"></i>申请管理员用户</a></li>
+				</ul>
+				
+				<ul class="nav nav-pills nav-stacked module">
+					  <li class="line"><a href="javascript:;"><i class="icon-barcode navbar-i"></i>个人简历</a></li>
+				</ul>
+				
+				<!-- footer.jsp -->
+				<div class="site-footer module">
+					<ul class="foot-li">
+						  <li>&copy; 2012 Vernon个人博客</li>
+						  <li>QQ: 742939937</li>
+						  <li>新浪微博: <a href="http://weibo.com/u/1339414102">@陈袁at互联</a></li>
+						  <li>Email: chengcheng222e@sina.com</li>
+					</ul>
+				</div>
+			</div>
+    		
+    		<!-- 右边 -->
+    		<div class="content-main" >
+    			<!-- 列表 -->
+    			<div class="module feed">
+    				<div class="content-title">全部内容</div>
+    				<div class="blog-tag">
+	    				<a href="blog/tagsquare.do"><span class="badge badge-info">博客</span></a>
+	    				<a href="blog/tagsquare.do"><span class="badge badge-info">技术</span></a>
+	    				<a href="blog/tagsquare.do"><span class="badge badge-info">Eclipse</span></a>
+    				</div>
+    				<h4># 1 <a href="blog/blog_detail.html">Eclipse - The Eclipse Foundation open source community website.</a></h4>
+    				<div class="content">
+    					2012/12/20 	EclipseCon 2013 Program Announced
+						The technical program for the upcoming EclipseCon 2013 conference had been announced. The conference is being held March 25-28, 2013 in Boston, MA and will be co-located with the new Agile ALM Connect conference and the annual OSGi DevCon.
+						2012/12/19 	ALM Connect Program Announced
+						The program has been announced for the second annual ALM Connect conference, co-located with EclipseCon 2013. ALM Connect focuses on connecting the tools, agile methods and people across the software development lifecycle.
+    				</div>
+					<div>
+						<span class="author-name">发布人: <a href="user/car.do">陈袁</a></span> 
+						<a name="addcomment" href="javascript:;" rel="tooltip" data-placement="top" data-original-title="添加评论"><i class="icon-comment tip-i"></i>3 条评论</a>
+						<a name="thanks" href="javascript:;" rel="tooltip" data-placement="top" data-original-title="非常感谢"><i class="icon-heart tip-i"></i>感谢</a>
+						<a name="nohelp" href="javascript:;" rel="tooltip" data-placement="top" data-original-title="对我没有帮助"><span class="icon-flag tip-i"></span>没有帮助</a>
+						<a class="pull-right" name="collapse" href="javascript:;" rel="tooltip" data-placement="top" data-original-title="收起"><i class="icon-chevron-up tip-i"></i>收起</a>
+					</div>
+    			</div>
+    			
+    			<div class="module page">
+    				<img alt="" src="img/icon/spinner-medium.gif">
+    			</div>
+    		</div> 
+    		
+			 <div class="clear"></div>
+      </div>
+	  
+	  
+	  
+	  
+	  
+	  <!-- ******************************************* BOOTSTRAP JS ***************************************-->
+	  <script type="text/javascript" src="js/vernon-blog-util.js"></script>
+	  
+	  <!-- ******************************************* 自定义 JS *******************************************-->
+	  <script type="text/javascript" src="plugin/bootstrap/js/bootstrap.js"></script>
+	  <script type="text/javascript" src="js/vernon-blog-main.js"></script>
+</body>
+</html>

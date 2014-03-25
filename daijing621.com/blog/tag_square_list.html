@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-CN"> 
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>标签广场</title>
+	<!-- ****************************************** 网站头标 ***************************************-->
+	<link href="img/icon/favicon.ico" rel="shortcut icon">
+	<!-- ******************************************* CSS *******************************************-->
+	<link type="text/css" href="../plugin/bootstrap/css/bootstrap.css" rel="stylesheet" />
+	<link type="text/css" href="../plugin/bootstrap/css/bootstrap-responsive.css" rel="stylesheet" />
+	<link type="text/css" href="../css/vernon-unit.css" rel="stylesheet" />
+	<link type="text/css" href="../css/vernon-main.css" rel="stylesheet" />
+	<!-- ******************************************* JS *******************************************-->
+	<script type="text/javascript" src="../js/jquery-1.8.1.js"></script>
+</head>
+<body class="user-style-vernon">
+	<!-- 页头 -->
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner topbar">
+			<div class="container header-inner">
+				<div class="nav-collapse collapse">
+					<form action="" class="navbar-search pull-left">
+	                    <input type="text" placeholder="输入关键字..." class="search-query span5">
+	                </form>
+	                
+					<ul class="nav">
+						<li class="active">
+							<a href="../index.html">
+								<span>
+									<i class="icon-home"></i>
+								</span>
+								<span class="text">主页</span>
+							</a>
+						</li>
+						<li class="">
+							<a href="tag_square_list.html">
+								<span>
+									<i class="icon-tags"></i>
+								</span>
+								<span class="text">标签广场</span>
+							</a>
+						</li>
+					</ul>
+					
+				    <!-- Button to trigger modal -->
+	    			<a href="#myModal" role="button" class="btn btn-info" data-toggle="modal">建议</a>
+	     
+				    <!-- Modal -->
+				    <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					    <div class="modal-header">
+						    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+						    <h3 id="myModalLabel">写下您的建议</h3>
+					    </div>
+					    <div class="modal-body">
+					    	<textarea rows="3" class="suggest-content"></textarea>
+					    </div>
+					    <div class="modal-footer">
+						    <button class="btn" data-dismiss="modal" aria-hidden="true">关闭</button>
+						    <button class="btn btn-primary">保存</button>
+					    </div>
+				    </div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 正文 -->
+	<div class="wrapper">
+			<div class="module tag-square">
+				<h5>标签广场</h5>
+				<div class="blog-tag">
+					开发工具:<br>
+    				<a href="#"><span class="badge badge-info">Eclipse</span></a>
+    				<a href="#"><span class="badge badge-info">Tomcat</span></a>
+   				</div>
+				<div class="blog-tag">
+					前端框架:<br>
+	    			<a href="#"><span class="badge badge-info">Bootstrap</span></a>
+	    			<a href="#"><span class="badge badge-info">jQuery UI</span></a>
+   				</div>
+				<div class="blog-tag">
+					程序员必知网站:<br>
+	    			<a href="#"><span class="badge badge-info">博客园</span></a>
+					<a href="#"><span class="badge badge-info">Iteye</span></a>
+					<a href="#"><span class="badge badge-info">CSDN</span></a>
+					<a href="#"><span class="badge badge-info">OSChina</span></a>
+   				</div>
+				<div class="blog-tag">
+					开源代码:<br>
+	    			<a href="https://github.com/chengcheng222e/vernon-socket"><span class="badge badge-info">GitHub</span></a>
+   				</div>
+			</div>
+      </div>
+	  
+	  <!-- ******************************************* BOOTSTRAP JS ***************************************-->
+	  <script type="text/javascript" src="../js/vernon-blog-util.js"></script>
+	  
+	  <!-- ******************************************* 自定义 JS *******************************************-->
+	  <script type="text/javascript" src="../plugin/bootstrap/js/bootstrap.js"></script>
+	  <script type="text/javascript" src="../js/vernon-blog-main.js"></script>
+</body>
+</html>

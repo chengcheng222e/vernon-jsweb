@@ -1,0 +1,199 @@
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	text-rendering: optimizeLegibility;
+}
+
+s {
+	text-decoration: none;
+}
+
+.user-style-vernon {
+	background-image: url(../img/bg.png);
+}
+.navbar-fixed-top {
+	z-index: 1050;
+}
+.topbar {
+	-webkit-box-shadow: 0 2px 3px rgba(0,0,0,.25);
+	-moz-box-shadow: 0 2px 3px rgba(0,0,0,.25);
+	box-shadow: 0 2px 3px rgba(0,0,0,.25);
+}
+
+.wrapper {
+	width: 837px;
+	min-height: 100%;
+	padding: 54px 14px 15px;
+	margin: 0 auto;
+	background: url(../img/wash-white-30.png);
+}
+
+.container {
+	position: relative;
+	text-align: c
+}
+
+.dashboard {
+	float: left;
+	width: 302px;
+}
+.content-main {
+	float: right;
+	width: 522px;
+}
+
+.site-footer {
+	padding: 15px;
+	color: #939B93;
+}
+
+.foot-li {
+	margin: 0;
+}
+
+.foot-li li{
+	outline-style: none;
+	display: inline-block;
+}
+
+.module {
+	text-shadow: 0 1px 0 white;
+	border: 1px solid #EEE;
+	border: 1px solid rgba(0, 0, 0, .1);
+	border-image: initial;
+	background: #FFFFFF;
+}
+
+.module, .promptbird {
+	position: relative;
+	margin-bottom: 10px;
+	line-height: 16px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding;
+	background-clip: padding-box;
+}
+
+.author-info {
+	border: 1px solid #FFFFFF ;
+	height:259px;
+	background: url(../img/user-info-bg.jpg);
+	margin: 0 0 12px 0;
+	line-height: 16px;
+}
+
+.author-name, .blog-ctime {
+	color: #939B93;
+}
+
+.blog-ctime {
+	margin-left: 50px;
+}
+
+.blog-property {
+	margin: 10px;
+}
+
+.blog-title {
+	margin-bottom: 20px;
+}
+
+.profile-picture {
+	position: relative;
+	margin: 20px auto 6px;
+	display: block;
+	width: 73px;
+	height: 73px;
+	border: 4px solid white;
+	background-color: white;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.25);
+	-moz-box-shadow: 0 1px 1px rgba(0,0,0,.25);
+	box-shadow: 0 1px 1px rgba(0,0,0,.25);
+	border-image: initial;
+}
+
+.profile-header-inner {
+	text-align: center;
+	font-size: 24px;
+}
+.header-inner {
+	text-align: center;
+	width: 835px !important;
+}
+
+.fullname {
+	font-size: 30px;
+	line-height: 1;
+	margin-bottom: 2px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+.username {
+	direction: ltr;
+	unicode-bidi: embed;
+	color: #FFFFFF;
+}
+
+.bio {
+	font: italic 13px/18px Georgia,"Times New Roman",serif;
+	color: #777;
+	word-wrap: break-word;
+	color: #FFFFFF;
+}
+
+.modal-body {
+	margin: 0 15px 0 0;
+}
+
+.suggest-content {
+	width: 100%;
+}
+
+.suggest-email {
+	text-align: left;
+	line-height: normal;
+}
+
+.line + .line{
+	border-top:1px solid #DDDDDD ;
+}
+
+.content-title {
+	text-align:left;
+	margin:5px;
+	font-size: 22px;
+	padding: 5px 0 10px 0;
+	border-bottom: 1px solid #DDDDDD ;
+	font-weight: bold;
+}
+
+.feed {
+	padding: 10px;
+	line-height: 25px;
+}
+
+.blog-detail, .tag-square {
+	padding: 50px;
+	line-height: 25px;
+}
+
+.comment {
+	margin-top: 30px;
+}
+
+.common-list {
+	margin:10px;
+	border-top: 1px solid #DDDDDD ;
+	max-height: 200px;
+	overflow-y: scroll;
+	padding: 10px;
+}
+
+.common-item + .common-item {
+	border-top: 1px dotted #DDDDDD ;
+} 

@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<script src="../plugin/kindeditor-4.1.4/kindeditor-min.js"></script>
+<script src="../plugin/kindeditor-4.1.4/lang/zh_CN.js"></script>
+<link rel="stylesheet" href="../plugin/kindeditor-4.1.4/themes/default/default.css" />
+<link rel="stylesheet" href="../plugin/kindeditor-4.1.4/themes/simple/simple.css" />
+<script>
+	var basePath = '';
+	var editor;
+	KindEditor.ready(function(K) {
+		editor = K.create('textarea[name="content"]', {
+			cssPath : basePath + '/plugin/kindeditor-4.1.4/plugins/code/prettify.css',
+			resizeType : 1,
+			allowImageUpload : false,
+			items : [ 'bold', 'italic', 'underline', 'removeformat', '|',
+							'insertorderedlist', 'insertunorderedlist', '|',
+							'emoticons', "image", "insertfile", "|", 'link', 'unlink',
+							'code', 'fullscreen' ]
+		});
+	});
+</script>  
+<div class="edit">
+	<textarea name="content" style="width:100%; height:200px; visibility:hidden;">请写下你的内容</textarea>        
+</div>
