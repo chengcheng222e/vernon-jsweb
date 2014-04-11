@@ -52,6 +52,7 @@
         $('#executeButton').click(function(){
           $('body').addClass('done');
           $('.done #controls :radio').attr('disabled',true);
+            // ~ 表示之后的元素
           var sources$ = $('#sourcePane input:checked~img');
           if ($('[name=clone]:checked').val()=='yes') sources$ = sources$.clone();
           var targets$ = $('#targetPane input:checkbox:checked').parents('.target');

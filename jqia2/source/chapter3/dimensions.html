@@ -17,10 +17,11 @@
     <script type="text/javascript" src="../scripts/jquery-1.4.js"></script>
     <script type="text/javascript">
       $(function(){
+          // 每当窗口改变大小时候
         $(window).resize(displayDimensions);
         displayDimensions();
       });
-
+        // 获取尺寸
       function displayDimensions() {
         $('#display').html(
           $('#testSubject').width()+'x'+$('#testSubject').height()

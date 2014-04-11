@@ -6,8 +6,10 @@
     <script type="text/javascript" src="../scripts/jquery-1.4.js"></script>
     <script type="text/javascript">
       $(function(){
+          // 这里需要了解nth-child用法, 指第N的元素, 或者是奇偶元素, 用法(nth-child(2)|nth-child(even))
+          // even:偶数,odd奇数,下标从0开始
         $("table tr:nth-child(even)").addClass("striped");
-        $("table").mouseover(swapThem).mouseout(swapThem);
+        $("table").mouseover(swapThem).mouseout(swapThem);// 有的话就删除, 没有的话就加上
       });
 
       function swapThem() {
