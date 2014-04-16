@@ -9,12 +9,13 @@
       var filterCount = 0;
 
       $(function() {
-
+        // data 可以赋值
         $('#addFilterButton').click(function(){
           var filterItem = $('<div>')
             .addClass('filterItem')
             .appendTo('#filterPane')
             .data('suffix','.' + (filterCount++));
+
           $('div.template.filterChooser')
               .children().clone().appendTo(filterItem)
               .trigger('adjustName');
