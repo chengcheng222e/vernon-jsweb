@@ -7,7 +7,6 @@
     <script type="text/javascript" src="../../../../src/main/js/global/jquery.stringutil.js"></script>
     <script type="text/javascript">
         $(function(){
-
             //测试1 getLength
             console.log('----------- 测试1 getLength -----------');
             var source = "我是abcd程序员";
@@ -30,6 +29,29 @@
     </script>
 </head>
 <body>
+
+    <pre>
+        $(function(){
+            //测试1 getLength
+            console.log('----------- 测试1 getLength -----------');
+            var source = "我是abcd程序员";
+            console.log('source = ' + source);
+            var length1 = StringUtil.getLength(source, true);
+            console.log('length1 = ' + length1);
+            var length2 = StringUtil.getLength(source, false);
+            console.log('length2 = ' + length2);
+
+
+            //测试2
+            console.log('----------- 测试2 replaceURLWithHTMLLinks -----------');
+            var html = "连接地址 http://www.google.com.hk";
+            console.log('html = ' + html);
+            var html1 = StringUtil.replaceURLWithHTMLLinks(html,true);
+            console.log('html1 = ' + html1);
+            var html2 = StringUtil.replaceURLWithHTMLLinks(html,false);
+            console.log('html2 = ' + html2);
+        });
+    </pre>
 
 </body>
 </html>
