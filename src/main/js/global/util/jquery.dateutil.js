@@ -1,6 +1,7 @@
 (function ($) {
 
-    DateUtil = function() {};
+    DateUtil = function () {
+    };
 
     DateUtil.prototype.daysInFebruary = function (obj) {
         var year = 0;
@@ -129,6 +130,58 @@
             minute = Math.floor((intervalSeconds - day * 24 * 60 * 60 - hour * 3600) / 60),
             second = Math.floor(intervalSeconds - day * 24 * 60 * 60 - hour * 3600 - minute * 60);
         return day + "天:" + hour + "小时:" + minute + "分钟:" + second + "秒";
+    };
+
+    /**
+     * 倒计时
+     *
+     * @param opt
+     */
+    DateUtil.prototype.countDown = function (opt) {
+        var option = {
+            nowTime: 0, // 当前时间:2013/02/01 18:30:30
+            endTime: 0, // 截止时间:2013/02/01 18:30:30
+            interval: 1, // 间隔回调时间秒
+            called: function (day, hour, second, minute) {
+            },//每次回调
+            finaled: function () {
+            } //完成后回调
+        };
+        var opts = {};
+        var timer = null;
+        opts = julyJs.extend(option, opt);
+
+        //当前时间
+        if (!opts.nowTime) {
+            opts.nowTime = (new Date()).getTime();
+        } else {
+            opts.nowTime = this.parse(opts.nowTime);
+        }
+        //当前时间
+        if (!opts.endTime) {
+            opts.endTime = (new Date()).getTime();
+        } else {
+            opts.endTime = this.parse(opts.endTime);
+        }
+
+        timer = setInterval(loop, opts.interval * 1e3);
+        // 循环
+        function loop() {
+            var ts = opts.endTime - opts.nowTime //计算剩余的毫秒数
+                , dd = parseInt(ts / 8.64e7)	//计算剩余的天数
+                , hh = parseInt(ts / 3.6e7 % 24)//计算剩余的小时数
+                , mm = parseInt(ts / 6e4 % 60)//计算剩余的分钟数
+                , ss = parseInt(ts / 1e3 % 60)//计算剩余的秒数
+                ;
+            //当前时间递减
+            opts.nowTime += opts.interval * 1e3;
+            if (ts <= 0) {
+                clearInterval(timer);
+                opts.finaled();
+            } else {
+                opts.called(dd, hh, mm, ss);
+            }
+        }
     };
 
     DateUtil = new DateUtil();
