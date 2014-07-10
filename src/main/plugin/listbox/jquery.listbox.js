@@ -23,12 +23,14 @@
         this$.setConfig();
         this$.mouseHover();
         this$.keyup();
-        //this$.target.on('focus', function () {
-        //    setTimeout(this$.show(), 500);
-        //}).on('blur', function () {
-        //    setTimeout(this$.hide(), 500);
-        //});
         this$.bindClick();
+        this$.target.on('focus', function () {
+            this$.show();
+        }).on('blur', function () {
+            setTimeout(function () {
+                this$.hide()
+            }, 150);
+        });
     };
 
     ListBoxUtil.prototype.setConfig = function () {
@@ -104,7 +106,7 @@
 
     ListBoxUtil.prototype.bindClick = function () {
         var this$ = this;
-        this$.listbox.children().bind('click', function () {
+        this$.listbox.children().on('click', function () {
             if (this$.options.afterSelected) {
                 this$.options.afterSelected($(this));
             }
