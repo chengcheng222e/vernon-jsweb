@@ -8,9 +8,9 @@
         this.top = 0;
         this.left = 0;
         this.id = "listbox";
-        this.className = "";
         this.bodyHtml = "";
         this.currentIndex = 0;
+        this.callFunction = null;
         var html = [
                 '<div class="ac-renderer" role="listbox" id="' + this.id + '" style="-webkit-user-select: none;">',
             '</div>'
@@ -23,11 +23,12 @@
         this$.setConfig();
         this$.mouseHover();
         this$.keyup();
-        this$.target.on('focus', function () {
-            this$.show();
-        }).on('blur', function () {
-            this$.hide();
-        });
+        //this$.target.on('focus', function () {
+        //    setTimeout(this$.show(), 500);
+        //}).on('blur', function () {
+        //    setTimeout(this$.hide(), 500);
+        //});
+        this$.bindClick();
     };
 
     ListBoxUtil.prototype.setConfig = function () {
@@ -54,8 +55,8 @@
             } else {
                 this.listbox.css("top", this.target.offset().top + this.target.height() + 10);
             }
-            if (this.options['className']) {
-                this.listbox.removeClass().addClass(this.options['className']);
+            if (this.options['callFunction']) {
+                this.callFunction = this.options['callFunction'];
             }
             this.targetWrap.append(this.listbox);
         }
@@ -67,6 +68,7 @@
             function () {
                 this$.listbox.children().removeClass('ac-active active');
                 $(this).addClass("ac-active active");
+                //
             }
         );
     };
@@ -101,14 +103,20 @@
     };
 
     ListBoxUtil.prototype.bindClick = function () {
-        this.listbox.children().on('click', function () {
-
+        var this$ = this;
+        this$.listbox.children().bind('click', function () {
+            if (this$.options.afterSelected) {
+                this$.options.afterSelected($(this));
+            }
         });
     };
 
     ListBoxUtil.prototype.enter = function (e) {
-        var curentChild = this.listbox.children().eq(this.currentIndex);
-        console.log(curentChild);
+        var this$ = this;
+        var curentChild = this$.listbox.children().eq(this$.currentIndex);
+        if (this$.options.afterSelected) {
+            this$.options.afterSelected(curentChild);
+        }
     };
 
     ListBoxUtil.prototype.keyup = function () {
@@ -121,5 +129,6 @@
             }
         });
     };
+
 
 })(jQuery);

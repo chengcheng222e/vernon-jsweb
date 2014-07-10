@@ -17,9 +17,9 @@
 </center>
 
 <script>
-
     var this$ = $('#box');
     this$.focus();
+
     var html = [
         '<div class="ac-row ac-active active" id=":3g" role="option" style="-webkit-user-select: none;">',
         '<img class="zm-item-img-avatar zg-left" src="310d85e8d_m.jpg" style="-webkit-user-select: none;">',
@@ -45,11 +45,15 @@
         '</span>',
         '</div>'
     ].join('');
+
     var options = {
-        width : 300,
+        width: 300,
         bodyHtml: html,
         target: this$,
-        targetWrap: this$.parent()
+        targetWrap: this$.parent(),
+        afterSelected: function (value) {
+            alert(value.html());
+        }
     };
     var listBoxUtil = new ListBoxUtil(options);
     listBoxUtil.init();
