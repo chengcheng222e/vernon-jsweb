@@ -1,0 +1,72 @@
+.ac-renderer {
+    width: 600px;
+    top: 33px;
+    left: 1px;
+    position: absolute;
+    top: 35px;
+    left: 1px;
+    z-index: 10;
+    background: #fff;
+    border: solid 1px #999\0;
+    border: 0 none rgba(0,0,0,0);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.5);
+    -moz-box-shadow: 0 1px 4px rgba(0,0,0,.5);
+    box-shadow: 0 1px 4px rgba(0,0,0,.5);
+}
+
+.ac-row {
+    cursor: pointer;
+    padding: 8px;
+    zoom: 1;
+    clear: both;
+}
+
+.ac-renderer>.ac-row:first-child {
+    border-radius: 5px 5px 0 0;
+}
+
+.ac-active {
+    background-color: #d6e9f8;
+}
+
+
+
+
+.ac-row .zm-item-img-avatar {
+    margin: 2px 10px 0 0;
+    width: 25px;
+    height: 25px;
+}
+
+.zm-item-img-avatar {
+    border-radius: 2px;
+}
+
+.zg-left {
+    float: left;
+}
+
+.autocomplete-row-name {
+    margin: 0 0 1px 35px;
+    display: block;
+    line-height: 1.2;
+    height: 1.2em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.zu-autocomplete-row-description {
+    color: #999;
+    display: block;
+    font-size: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: 14px;
+    height: 14px;
+    zoom: 1;
+}
