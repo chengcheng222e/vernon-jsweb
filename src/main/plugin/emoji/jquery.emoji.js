@@ -6,13 +6,13 @@
         this.faceHash = [];
         this.current = null;
         var html = [
-            '<div id="wbim_face_box" class="wbim_face_box" style="display: none;" node-type="wbim_face_box">',
-            '   <div class="wbim_face_tit">',
-            '       <div class="wbim_face_arr"></div>',
-            '       <div class="wbim_face_tit_lf">普通表情</div> <a class="wbim_icon_close" href="javascript:;" node-type="wbim_icon_close"></a>',
+            '<div id="emoji_face_box" class="emoji_face_box" style="display: none;" node-type="emoji_face_box">',
+            '   <div class="emoji_face_tit">',
+            '       <div class="emoji_face_arr"></div>',
+            '       <div class="emoji_face_tit_lf">普通表情</div> <a class="emoji_icon_close" href="javascript:;" node-type="emoji_icon_close"></a>',
             '   </div>',
-            '   <div class="wbim_face_con">',
-            '       <ul class="wbim_face_list" node-type="wbim_face_list">',
+            '   <div class="emoji_face_con">',
+            '       <ul class="emoji_face_list" node-type="emoji_face_list">',
             '       </ul>',
             '       <div class="tsina_loading cter">',
             '       <span class="tsina_ico_ldg"></span>',
@@ -107,15 +107,14 @@
         var this$ = this;
         if (this.faceHash.src) {
             for (var i = 0; i < this.faceHash.src.length; i++) {
-                $(".wbim_face_list").append('<li><a title="' + this.faceHash.src[i] + '"   href="javascript:;"><img src="' + this.getFaceImg(i + ".gif") + '"></a></li>');
+                $(".emoji_face_list").append('<li><a title="' + this.faceHash.src[i] + '"   href="javascript:;"><img src="' + this.getFaceImg(i + ".gif") + '"></a></li>');
             }
             // 点击表情
-            $(".wbim_face_list li a img").click(function (event) {
-                var e = $(".wbim_chat_input textarea");
+            $(".emoji_face_list li a img").click(function () {
                 if (this$.options.afterSelected) {
                     this$.options.afterSelected($(this).closest('a').attr('title'));
                 }
-                $(".wbim_face_box").hide();
+                $(".emoji_face_box").hide();
             });
             this.faceHash.src = null;
         }
@@ -125,7 +124,7 @@
         if (this.options['current']) {
             this.current = this.options['current'];
         }
-        if ($('#wbim_face_box').length == 0) {
+        if ($('#emoji_face_box').length == 0) {
             $('body').append(this.emoji_face);
             this.initFace();
             this.addFaces();
