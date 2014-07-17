@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../../../main/js/global/jquery/1.8/jquery-1.8.1.js"></script>
+    <script src="../../../main/plugin/listbox/jquery.listbox.js"></script>
+    <link rel="stylesheet" href="../../../main/plugin/listbox/listbox.css"/>
+</head>
+
+<body>
+
+<center>
+    <div>
+        <input id="box" type="text" value="" placeholder="输入关键字"/>
+    </div>
+</center>
+
+<script>
+    var this$ = $('#box');
+    var html = [
+        '<div class="ac-row ac-active active" id=":3g" role="option" style="-webkit-user-select: none;">',
+        '<img class="zm-item-img-avatar zg-left" src="310d85e8d_m.jpg" style="-webkit-user-select: none;">',
+        '<span class="autocomplete-row-name" title="足球" style="-webkit-user-select: none;">足球1111</span>',
+        '<span class="zg-gray-normal zu-autocomplete-row-description" style="-webkit-user-select: none;">',
+        '又称<b class="ac-highlighted" style="-webkit-user-select: none;">s</b>occer，222955 人关注',
+        '</span>',
+        '</div>',
+
+        '<div class="ac-row" id=":4g" role="option" style="-webkit-user-select: none;">',
+        '<img class="zm-item-img-avatar zg-left" src="310d85e8d_m.jpg" style="-webkit-user-select: none;">',
+        '<span class="autocomplete-row-name" title="足球" style="-webkit-user-select: none;">足球22222</span>',
+        '<span class="zg-gray-normal zu-autocomplete-row-description" style="-webkit-user-select: none;">',
+        '又称<b class="ac-highlighted" style="-webkit-user-select: none;">s</b>occer，222955 人关注',
+        '</span>',
+        '</div>',
+
+        '<div class="ac-row" id=":5g" role="option" style="-webkit-user-select: none;">',
+        '<img class="zm-item-img-avatar zg-left" src="310d85e8d_m.jpg" style="-webkit-user-select: none;">',
+        '<span class="autocomplete-row-name" title="足球" style="-webkit-user-select: none;">足球33333</span>',
+        '<span class="zg-gray-normal zu-autocomplete-row-description" style="-webkit-user-select: none;">',
+        '又称<b class="ac-highlighted" style="-webkit-user-select: none;">s</b>occer，222955 人关注',
+        '</span>',
+        '</div>'
+    ].join('');
+
+    var options = {
+        width: 300,
+        bodyHtml: html,
+        target: this$,
+        targetWrap: this$.parent(),
+        afterSelected: function (value) {
+            alert(value.html());
+        }
+    };
+    var listBoxUtil = new ListBoxUtil(options);
+    listBoxUtil.init();
+</script>
+</body>
+</html>

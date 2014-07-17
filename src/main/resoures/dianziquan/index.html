@@ -1,0 +1,387 @@
+<!--Created by IntelliJ IDEA.-->
+<!--User: chenyuan-->
+<!--Date: 4/25/14-->
+<!--Time: 15:43-->
+<!--To change this template use File | Settings | File Templates.-->
+<html lang="zh-cn">
+<head>
+    <title>电子圈分享首页</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="../../plugin/bootstrap/3.1.1/css/bootstrap.css"/>
+    <link rel="stylesheet" href="../../plugin/bootstrap/3.1.1/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="man/css/theme.css"/>
+    <link rel="stylesheet" href="../../plugin/uploadify/uploadify.css"/>
+</head>
+<body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <!--响应式后的菜单-->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">响应式后的菜单</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!--<a class="navbar-brand" href="#"><img src="http://www.zhihu.com/static/img/sticky_header/new_logo.png" alt="知乎"/></a>-->
+                <a class="navbar-brand" href="/">电子圈</a>
+            </div>
+
+            <div class="navbar-collapse collapse">
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control search" id="global-search" placeholder="输入关键字...">
+                    </div>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li style="margin-right: 80px;">
+                        <button type="button" class="btn btn-info publish-btn" data-toggle="modal" data-target="#publish-tweet-box">
+                            <span class="glyphicon glyphicon-edit"></span> 发布
+                        </button>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle navbar-avatar" data-toggle="dropdown">
+                            <img src="man/images/avatars/avatar1.png" alt="陈袁" width="25px" height="25px"/>
+                            陈袁 <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">个人主页</a></li>
+                            <li><a href="#">私信</a></li>
+                            <li><a href="#">设置</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">登出</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </div>
+
+    <!--<div style="position:fixed ;left: 10px;top: 55px;">-->
+    <!--<script charset="Shift_JIS" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.js"></script>-->
+    <!--</div>-->
+
+    <div class="container wrapper">
+        <div class="row">
+            <!--dashboard-->
+            <div class="col-sm-4 blog-sidebar">
+                <div class="sidebar-module">
+                    <ul class="nav nav-pills nav-stacked dashboard" style="max-width: 300px;">
+                        <li><a href="/index">所有动态 <span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
+                        <li><a href="javascript:;">圈内八卦 </a></li>
+                        <li><a href="javascript:;">资料分享 </a></li>
+                        <li><a href="javascript:;">物料供求 </a></li>
+                        <li><a href="javascript:;">机遇寻求 </a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-module">
+                    <ul class="dashboard foot-model" style="max-width: 300px;">
+                        <li>&copy; 2014 电子圈</li>
+                    </ul>
+                </div>
+            </div>
+            <!--/.blog-sidebar-->
+
+            <!--******** 正文 ********-->
+            <div class="col-sm-8">
+                <div class="row">
+
+
+
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-1 avatar">
+                                    <img src="man/images/avatars/avatar1.png" alt=""/>
+                                </div>
+                                <div class="col-md-11">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-md-8 nickname"><a href="javascript:;">陈袁</a> <strong>, 互联网就是未来 </strong></div>
+                                        <div class="col-xs-6 col-md-4 text-right">一个小时前</div>
+                                    </div>
+                                    <div>
+                                        <a href="#">#标签#</a>云南<a href="">@新东方一名女员工</a>，7月13日下午14时进入云南玛莉亚医院分娩，
+                                        17时医生突然要求家属在空白病危通知书上签字。医生隐瞒产妇抢救情况，拼凑抢救设备，14日凌晨1:30产妇转至红
+                                        会医院，凌晨2:20抢救无效，28岁离开人世。整个过程医院从预警，抢救，转院存在重大漏洞，敦请相关部门对该医
+                                        院进行调查<img src="http://img.dianziq.com/img//imface/common/14.gif" alt=""/>
+                                        <img src="http://img.dianziq.com/img//imface/common/14.gif" alt=""/>
+                                        <img src="http://img.dianziq.com/img//imface/common/14.gif" alt=""/>
+                                        <img src="http://img.dianziq.com/img//imface/common/14.gif" alt=""/>
+                                    </div>
+                                    <div class="tweet-images">
+                                        <img src="http://ww3.sinaimg.cn/thumbnail/a8737771gw1eifi5hmwo1j20f40a1mz2.jpg" alt=""/>
+                                        <img src="http://ww3.sinaimg.cn/thumbnail/a8737771gw1eifi5hmwo1j20f40a1mz2.jpg" alt=""/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <a href="javascript:;" class="btn vote" data-operate="vote" data-tweetid="999">
+                                <span class="glyphicon glyphicon-thumbs-up"></span> <strong>999</strong>
+                            </a>
+                            <a href="javascript:;" class="btn comment" data-operate="comment" data-tweetid="999">
+                                <span class="glyphicon glyphicon-comment"></span> <strong>999</strong>
+                            </a>
+                            <a href="javascript:;" class="btn like" data-operate="like" data-tweetid="999">
+                                <span class="glyphicon glyphicon-heart-empty"></span> <strong>私藏</strong>
+                            </a>
+                        </div>
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-warning">
+                                <div>
+                                    <span class="comment-floor-num">#1</span>
+                                    <img src="man/images/avatars/avatar1.png" alt="" width="25px" height="25px"/>
+                                    <a href="javascript:;">陈袁</a> <strong>, 互联网就是未来 </strong>
+                                </div>
+                                <div class="tweet-comment">
+                                    小时候玩过的积木和它们比简直渣啊!看看今年儿童节能不能坑妈妈一套…据说Chrome之所以占资源是因为一个选项卡一个进程。为此还专门有那种暂时收起选项卡的应用。但现在在用搜狗，貌似也是一个选项卡一个进程……
+                                </div>
+                                <div class="tweet-comment-operate">
+                                    11:20
+                                    <a href="javascript:;"><span class="glyphicon glyphicon-share-alt"></span> 回复</a>
+                                    <a href="javascript:;"><span class="glyphicon glyphicon-thumbs-up"></span> 赞</a>
+                                    <a href="javascript:;"><span class="glyphicon glyphicon-flag"></span> 举报</a>
+                                </div>
+                                <div class="tweet-comment-reply">
+                                    <input type="text" class="form-control" placeholder="写下你的评论...">
+                                    <button type="button" class="btn btn-primary btn-sm">回复</button>
+                                </div>
+                            </li>
+                            <li class="list-group-item list-group-item-warning">
+                                <div>
+                                    <span class="comment-floor-num">#2</span>
+                                    <img src="man/images/avatars/avatar1.png" alt="" width="25px" height="25px"/>
+                                    <a href="javascript:;">陈袁</a> <strong>, 互联网就是未来 </strong>
+                                </div>
+                                <div class="tweet-comment">
+                                    小时候玩过的积木和它们比简直渣啊!看看今年儿童节能不能坑妈妈一套…据说Chrome之所以占资源是因为一个选项卡一个进程。为此还专门有那种暂时收起选项卡的应用。但现在在用搜狗，貌似也是一个选项卡一个进程……
+                                </div>
+                                <!--<div class="tweet-comment-operate">-->
+                                    <!--11:20-->
+                                    <!--<a href="javascript:;"><span class="glyphicon glyphicon-share-alt"></span> 回复</a>-->
+                                    <!--<a href="javascript:;"><span class="glyphicon glyphicon-thumbs-up"></span> 赞</a>-->
+                                    <!--<a href="javascript:;"><span class="glyphicon glyphicon-flag"></span> 举报</a>-->
+                                <!--</div>-->
+                            </li>
+                            <li class="list-group-item list-group-item-warning">
+                                <input type="text" class="form-control" placeholder="写下你的评论...">
+                                <button type="button" class="btn btn-primary btn-sm margin-top-5px">评论</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--++++++++++++++++++++++++-->
+
+
+
+
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-1 avatar">
+                                    <img src="man/images/avatars/avatar1.png" alt=""/>
+                                </div>
+                                <div class="col-md-11">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-md-8 nickname"><a href="javascript:;">陈袁</a> <strong>, 互联网就是未来 </strong></div>
+                                        <div class="col-xs-6 col-md-4 text-right">一个小时前</div>
+                                    </div>
+                                    <div>云南新东方一名女员工，7月13日下午14时进入云南玛莉亚医院分娩，17时医生突然要求家属在空白病危通知书上签字。医生隐瞒产妇抢救情况，拼凑抢救设备，14日凌晨1:30产妇转至红会医院，凌晨2:20抢救无效，28岁离开人世。整个过程医院从预警，抢救，转院存在重大漏洞，敦请相关部门对该医院进行调查</div>
+                                    <div class="tweet-images">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <a href="javascript:;" class="btn vote" data-operate="vote" data-tweetid="999">
+                                <span class="glyphicon glyphicon-thumbs-up"></span> <strong>999</strong>
+                            </a>
+                            <a href="javascript:;" class="btn comment" data-operate="comment" data-tweetid="999">
+                                <span class="glyphicon glyphicon-comment"></span> <strong>999</strong>
+                            </a>
+                            <a href="javascript:;" class="btn like" data-operate="like" data-tweetid="999">
+                                <span class="glyphicon glyphicon-heart-empty"></span> <strong>私藏</strong>
+                            </a>
+                        </div>
+                    </div>
+                    <!--++++++++++++++++++++++++-->
+
+
+
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-1 avatar">
+                                    <img src="man/images/avatars/avatar1.png" alt=""/>
+                                </div>
+                                <div class="col-md-11">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-md-8 nickname"><a href="javascript:;">陈袁</a> <strong>, 互联网就是未来 </strong></div>
+                                        <div class="col-xs-6 col-md-4 text-right">一个小时前</div>
+                                    </div>
+                                    <div>云南新东方一名女员工，7月13日下午14时进入云南玛莉亚医院分娩，17时医生突然要求家属在空白病危通知书上签字。医生隐瞒产妇抢救情况，拼凑抢救设备，14日凌晨1:30产妇转至红会医院，凌晨2:20抢救无效，28岁离开人世。整个过程医院从预警，抢救，转院存在重大漏洞，敦请相关部门对该医院进行调查</div>
+                                    <div class="tweet-images">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <a href="javascript:;" class="btn vote" data-operate="vote" data-tweetid="999">
+                                <span class="glyphicon glyphicon-thumbs-up"></span> <strong>999</strong>
+                            </a>
+                            <a href="javascript:;" class="btn comment" data-operate="comment" data-tweetid="999">
+                                <span class="glyphicon glyphicon-comment"></span> <strong>999</strong>
+                            </a>
+                            <a href="javascript:;" class="btn like" data-operate="like" data-tweetid="999">
+                                <span class="glyphicon glyphicon-heart-empty"></span> <strong>私藏</strong>
+                            </a>
+                        </div>
+                    </div>
+                    <!--++++++++++++++++++++++++-->
+
+
+
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-1 avatar">
+                                    <img src="man/images/avatars/avatar1.png" alt=""/>
+                                </div>
+                                <div class="col-md-11">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-md-8 nickname"><a href="javascript:;">陈袁</a> <strong>, 互联网就是未来 </strong></div>
+                                        <div class="col-xs-6 col-md-4 text-right">一个小时前</div>
+                                    </div>
+                                    <div>云南新东方一名女员工，7月13日下午14时进入云南玛莉亚医院分娩，17时医生突然要求家属在空白病危通知书上签字。医生隐瞒产妇抢救情况，拼凑抢救设备，14日凌晨1:30产妇转至红会医院，凌晨2:20抢救无效，28岁离开人世。整个过程医院从预警，抢救，转院存在重大漏洞，敦请相关部门对该医院进行调查</div>
+                                    <div class="tweet-images">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <a href="javascript:;" class="btn vote" data-operate="vote" data-tweetid="999">
+                                <span class="glyphicon glyphicon-thumbs-up"></span> <strong>999</strong>
+                            </a>
+                            <a href="javascript:;" class="btn comment" data-operate="comment" data-tweetid="999">
+                                <span class="glyphicon glyphicon-comment"></span> <strong>999</strong>
+                            </a>
+                            <a href="javascript:;" class="btn like" data-operate="like" data-tweetid="999">
+                                <span class="glyphicon glyphicon-heart-empty"></span> <strong>私藏</strong>
+                            </a>
+                        </div>
+                    </div>
+                    <!--++++++++++++++++++++++++-->
+
+
+
+
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-1 avatar">
+                                    <img src="man/images/avatars/avatar1.png" alt=""/>
+                                </div>
+                                <div class="col-md-11">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-md-8 nickname"><a href="javascript:;">陈袁</a> <strong>, 互联网就是未来 </strong></div>
+                                        <div class="col-xs-6 col-md-4 text-right">一个小时前</div>
+                                    </div>
+                                    <div>云南新东方一名女员工，7月13日下午14时进入云南玛莉亚医院分娩，17时医生突然要求家属在空白病危通知书上签字。医生隐瞒产妇抢救情况，拼凑抢救设备，14日凌晨1:30产妇转至红会医院，凌晨2:20抢救无效，28岁离开人世。整个过程医院从预警，抢救，转院存在重大漏洞，敦请相关部门对该医院进行调查</div>
+                                    <div class="tweet-images">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <a href="javascript:;" class="btn vote" data-operate="vote" data-tweetid="999">
+                                <span class="glyphicon glyphicon-thumbs-up"></span> <strong>999</strong>
+                            </a>
+                            <a href="javascript:;" class="btn comment" data-operate="comment" data-tweetid="999">
+                                <span class="glyphicon glyphicon-comment"></span> <strong>999</strong>
+                            </a>
+                            <a href="javascript:;" class="btn like" data-operate="like" data-tweetid="999">
+                                <span class="glyphicon glyphicon-heart-empty"></span> <strong>私藏</strong>
+                            </a>
+                        </div>
+                    </div>
+                    <!--++++++++++++++++++++++++-->
+
+
+
+
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-1 avatar">
+                                    <img src="man/images/avatars/avatar1.png" alt=""/>
+                                </div>
+                                <div class="col-md-11">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-md-8 nickname"><a href="javascript:;">陈袁</a> <strong>, 互联网就是未来 </strong></div>
+                                        <div class="col-xs-6 col-md-4 text-right">一个小时前</div>
+                                    </div>
+                                    <div>云南新东方一名女员工，7月13日下午14时进入云南玛莉亚医院分娩，17时医生突然要求家属在空白病危通知书上签字。医生隐瞒产妇抢救情况，拼凑抢救设备，14日凌晨1:30产妇转至红会医院，凌晨2:20抢救无效，28岁离开人世。整个过程医院从预警，抢救，转院存在重大漏洞，敦请相关部门对该医院进行调查</div>
+                                    <div class="tweet-images">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <a href="javascript:;" class="btn vote" data-operate="vote" data-tweetid="999">
+                                <span class="glyphicon glyphicon-thumbs-up"></span> <strong>999</strong>
+                            </a>
+                            <a href="javascript:;" class="btn comment" data-operate="comment" data-tweetid="999">
+                                <span class="glyphicon glyphicon-comment"></span> <strong>999</strong>
+                            </a>
+                            <a href="javascript:;" class="btn like" data-operate="like" data-tweetid="999">
+                                <span class="glyphicon glyphicon-heart-empty"></span> <strong>私藏</strong>
+                            </a>
+                        </div>
+                    </div>
+                    <!--++++++++++++++++++++++++-->
+
+                </div>
+            </div><!-- /.book-main -->
+        </div><!-- /.row -->
+    </div> <!-- /container -->
+
+    <!--publish-tweet-box-->
+    <!-- Modal -->
+    <div class="modal fade" id="publish-tweet-box" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">发布推文</h4>
+                </div>
+                <div class="modal-body">
+                    <div contenteditable="true" class="tweet-box"></div>
+                </div>
+                <div class="modal-footer">
+                    <div class="nav nav-pills pull-left">
+                        <form class="form-inline" action="/upload" method="post" enctype="multipart/form-data" id="tweet-box-upload-form">
+                            <input type="file" name="fileUpload" id="fileUpload"/>
+                        </form>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="tweet-box-upload">上传</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" name="add" class="btn btn-danger">发布</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+</body>
+</html>
