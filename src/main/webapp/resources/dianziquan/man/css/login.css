@@ -1,0 +1,338 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    vertical-align: baseline
+}
+
+a img, :link img, :visited img {
+    border: 0
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+ol, ul {
+    list-style: none
+}
+
+q:before, q:after, blockquote:before, blockquote:after {
+    content: ""
+}
+
+body {
+    font: normal 62.5% "Helvetica Neue", helvetica, sans-serif;
+    color: #999;
+    background: #333;
+    padding: 0;
+    margin: 0
+}
+
+a:link, a:visited {
+    color: #999
+}
+
+a:hover {
+    color: #aaa
+}
+
+#main {
+    margin: 0 auto;
+    width: 600px;
+    padding: 60px 0
+}
+
+h1 a {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px
+}
+
+h1 a:hover {
+    opacity: .7
+}
+
+h1 a img {
+    width: 285px
+}
+
+h2 {
+    font: normal 2.8em "Helvetica Neue", helvetica, sans-serif;
+    text-align: center
+}
+
+h3 {
+    margin: 20px 0 10px 0;
+    padding: 20px 0 0 0;
+    font: normal 1.4em "Helvetica Neue", helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: left;
+    color: #fff;
+    border-top: 1px solid rgba(255, 255, 255, 0.1)
+}
+
+h3.or {
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-weight: normal;
+    text-transform: none;
+    border-top: none;
+    color: #999
+}
+
+h4 {
+    margin: 20px 0 10px 0;
+    padding: 20px 0 0 0;
+    font: normal 1.8em "Helvetica Neue", helvetica, sans-serif;
+    line-height: 1.4;
+    font-weight: normal;
+    text-align: left;
+    color: #fff;
+    border-top: 1px solid rgba(255, 255, 255, 0.1)
+}
+
+h4 strong {
+    font-weight: bold
+}
+
+a.handle {
+    margin: 0 2px;
+    padding: 2px 4px;
+    font-size: 1em;
+    font-weight: normal;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px
+}
+
+a.handle:hover {
+    color: #fff;
+    border-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.3)
+}
+
+div.sign-connections {
+    float: right;
+    width: 220px;
+    position: relative;
+    margin: 39px 0 0 0
+}
+
+div.sign-connections-full {
+    width: 100%;
+    margin: 30px 0 0 0
+}
+
+div.sign-connections-full a.alt-link {
+    float: left;
+    margin: 12px 0 0 20px;
+    font-size: 1.2em
+}
+
+div.sign-connections-up {
+    width: 100%;
+    margin: 30px 0 0 0;
+    text-align: center
+}
+
+p.sign-notamember {
+    clear: both;
+    padding: 30px 0 0 0;
+    font-size: 1.6em;
+    text-align: center
+}
+
+#form-oldschool {
+    float: left;
+    width: 325px;
+    margin: 20px 0 0 0;
+    border-right: 1px solid rgba(255, 255, 255, 0.1)
+}
+
+form fieldset {
+    margin: 0 0 15px 0
+}
+
+label {
+    display: block;
+    margin: 0 0 4px 0;
+    font-size: 1.4em;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.8)
+}
+
+input.text-input {
+    width: 270px;
+    border: none;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    font: 1.6em "Helvetica Neue", helvetica, sans-serif;
+    padding: 8px 10px;
+    margin-right: 8px;
+    color: #444;
+    outline: none
+}
+
+label a:link, label a:visited {
+    margin-left: 5px;
+    font-size: .9em;
+    line-height: 1;
+    font-weight: normal;
+    text-decoration: underline
+}
+
+.check {
+    float: left;
+    margin: 10px 0 0 20px
+}
+
+.check label {
+    color: #999
+}
+
+.check input {
+    vertical-align: middle
+}
+
+p {
+    margin: 1.5em 0 0 0;
+    font-size: 1.5em;
+    line-height: 1.5
+}
+
+p.message {
+    margin: 2px 0 0 0
+}
+
+p.alt-link {
+    float: left;
+    margin: 10px 0 0 10px
+}
+
+div.form-inline {
+    margin: 20px 0 0 0
+}
+
+div.form-inline form fieldset {
+    display: inline
+}
+
+div.form-inline form input.text-input {
+    width: 180px
+}
+
+div.form-inline form input.button {
+    display: inline
+}
+
+form .errorExplanation {
+    margin: 15px 0;
+    font-size: 1.4em;
+    line-height: 1.5;
+    font-weight: normal;
+    text-align: left;
+    color: #df3b3b;
+    background: #fff;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px
+}
+
+* html .mod {
+    height: 1%
+}
+
+*:first-child + html .mod {
+    min-height: 1px
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        -webkit-text-size-adjust: none
+    }
+
+    #main {
+        float: none;
+        width: auto;
+        padding: 20px
+    }
+
+    h1 a img {
+        width: 185px
+    }
+
+    h2 {
+        font-size: 2em
+    }
+
+    #form-oldschool {
+        float: none;
+        margin: 0;
+        padding: 0px;
+        border: 0;
+        width: 100%;
+        box-sizing: border-box
+    }
+
+    div.sign-connections {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px 0 0 0;
+        margin-top: 20px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1)
+    }
+
+    form fieldset {
+        margin: 15px 0
+    }
+
+    label {
+        margin-bottom: 5px
+    }
+
+    input.text-input {
+        width: 100%;
+        box-sizing: border-box;
+        border: none;
+        font: 1.6em "Helvetica Neue", helvetica, sans-serif;
+        padding: 8px 10px;
+        margin: 0px
+    }
+
+    input.button {
+        padding: 15px 0;
+        margin: 15px 0 0;
+        width: 100%
+    }
+
+    a.auth-twitter, .auth-twitter {
+        margin: 10px 0 5px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 15px 0 15px 0;
+        font-size: 1.6em;
+        text-align: center
+    }
+
+    div.form-inline form fieldset, div.form-inline form input.button {
+        display: block
+    }
+
+    div.form-inline form input.text-input {
+        width: 100%
+    }
+}
