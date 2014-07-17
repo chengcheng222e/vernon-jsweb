@@ -21,8 +21,20 @@ h6, .h6 {
     color: #333;
 }
 
+.margin-left-5px {
+    margin-left: 5px;
+}
+
 .margin-right-5px {
     margin-right: 5px;
+}
+
+.margin-top-5px {
+    margin-top: 5px;
+}
+
+.margin-bottom-5px {
+    margin-bottom: 5px;
 }
 
 /*
@@ -111,6 +123,30 @@ h6, .h6 {
     margin: 1px 5px 0px 0px;
 }
 
+.tweet-comment, .tweet-comment-operate{
+    margin-left: 55px;
+}
+
+.tweet-comment-operate{
+    margin-top: 5px;
+    color: #000000;
+    font-size: 12px;
+}
+
+.tweet-comment-operate a {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.tweet-comment-reply{
+    margin-left: 55px;
+    margin-top: 5px;
+}
+
+.tweet-comment-reply input{
+    margin-bottom: 5px;
+}
+
 .panel-footer {
     padding: 2px;
 }
@@ -118,6 +154,11 @@ h6, .h6 {
 .avatar > img {
     border-radius: 5px;
     border: 1px solid #dddddd;
+}
+
+.comment-floor-num{
+    color: #000000;
+    font-size: 20px;
 }
 
 /* ========================= alert ========================= */
