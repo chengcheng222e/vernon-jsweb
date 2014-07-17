@@ -1,1 +1,2 @@
-file:///Users/chenyuan/Workspaces/Github/vernon-jsweb/src/main/webapp/resoures/dianziquan/index.html
+
+http://dianziquan.sturgeon.mopaas.com/resoures/dianziquan/index.html
