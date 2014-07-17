@@ -147,6 +147,12 @@ h6, .h6 {
     margin-bottom: 5px;
 }
 
+.tweet-forward{
+    margin-left: 70px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
 .panel-footer {
     padding: 2px;
 }
@@ -160,6 +166,7 @@ h6, .h6 {
     color: #000000;
     font-size: 20px;
 }
+
 
 /* ========================= alert ========================= */
 .system-alert-messge {
