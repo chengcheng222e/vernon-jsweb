@@ -3,6 +3,7 @@ http://dianziquan.sturgeon.mopaas.com/resources/dianziquan/index.html
 
 http://dianziquan.sturgeon.mopaas.com/resources/dianziquan/login.html
 
+http://dianziquan.sturgeon.mopaas.com/resources/dianziquan/register.html
 
 http://dianziquan.sturgeon.mopaas.com/plugin/jbox-v2.3/jbox-demo.html
 
