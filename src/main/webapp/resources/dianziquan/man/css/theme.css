@@ -130,6 +130,10 @@ h6, .h6 {
     margin: 1px 5px 0px 0px;
 }
 
+.tweet-tags{
+    margin-top: 10px;
+}
+
 .tweet-comment, .tweet-comment-operate{
     margin-left: 55px;
 }
