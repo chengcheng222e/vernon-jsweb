@@ -7,6 +7,8 @@ http://dianziquan.sturgeon.mopaas.com/resources/dianziquan/profile.html
 
 http://dianziquan.sturgeon.mopaas.com/resources/dianziquan/savety.html
 
+http://dianziquan.sturgeon.mopaas.com/resources/dianziquan/forget.html
+
 http://dianziquan.sturgeon.mopaas.com/resources/dianziquan/visitor.html
 
 http://dianziquan.sturgeon.mopaas.com/resources/dianziquan/login.html
