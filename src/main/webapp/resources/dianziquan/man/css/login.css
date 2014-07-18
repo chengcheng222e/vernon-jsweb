@@ -162,6 +162,12 @@ p.sign-notamember {
     border-right: 1px solid rgba(255, 255, 255, 0.1)
 }
 
+#form-register {
+    border: 0;
+    box-sizing: border-box;
+    margin: 20px 30px 30px 100px;
+}
+
 form fieldset {
     margin: 0 0 15px 0
 }
@@ -170,12 +176,24 @@ label {
     display: block;
     margin: 0 0 4px 0;
     font-size: 1.4em;
-    line-height: 1;
+    line-height: 2;
     color: rgba(255, 255, 255, 0.8)
 }
 
 input.text-input {
     width: 270px;
+    border: none;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    font: 1.6em "Helvetica Neue", helvetica, sans-serif;
+    padding: 8px 10px;
+    margin-right: 8px;
+    color: #444;
+    outline: none
+}
+
+input.input-radio {
     border: none;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
@@ -239,19 +257,6 @@ div.form-inline form input.button {
     display: inline
 }
 
-form .errorExplanation {
-    margin: 15px 0;
-    font-size: 1.4em;
-    line-height: 1.5;
-    font-weight: normal;
-    text-align: left;
-    color: #df3b3b;
-    background: #fff;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    border-radius: 8px
-}
-
 * html .mod {
     height: 1%
 }
@@ -288,6 +293,12 @@ form .errorExplanation {
         box-sizing: border-box
     }
 
+    #form-register {
+        border: 0;
+        box-sizing: border-box;
+        padding: 50px;
+    }
+
     div.sign-connections {
         width: 100%;
         box-sizing: border-box;
@@ -311,21 +322,6 @@ form .errorExplanation {
         font: 1.6em "Helvetica Neue", helvetica, sans-serif;
         padding: 8px 10px;
         margin: 0px
-    }
-
-    input.button {
-        padding: 15px 0;
-        margin: 15px 0 0;
-        width: 100%
-    }
-
-    a.auth-twitter, .auth-twitter {
-        margin: 10px 0 5px;
-        width: 100%;
-        box-sizing: border-box;
-        padding: 15px 0 15px 0;
-        font-size: 1.6em;
-        text-align: center
     }
 
     div.form-inline form fieldset, div.form-inline form input.button {
