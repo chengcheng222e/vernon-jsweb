@@ -1,6 +1,6 @@
 <html lang="zh-cn">
 <head>
-    <title>电子圈登录</title>
+    <title>登录</title>
     <meta name="description" content="">
     <meta name="author" content="">
     <meta charset="utf-8">
@@ -9,34 +9,39 @@
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="stylesheet" href="man/plugin/bootstrap/3.1.1/css/bootstrap.css"/>
     <link rel="stylesheet" href="man/plugin/bootstrap/3.1.1/css/bootstrap-theme.min.css"/>
-    <link rel="stylesheet" href="man/css/login.css"/>
+    <link rel="stylesheet" href="man/css/theme.css"/>
 </head>
 <body>
-    <div id="main-container">
-        <div id="main">
-            <h1><a href="/"><img alt="电子圈" src="man/images/app_logo.png" /></a></h1>
-            <!--<a href="/"><img alt="电子圈" src="man/images/app_logo.png" /></a>-->
+    <div class="container wrapper">
 
-            <div id="form-oldschool">
-                <form accept-charset="UTF-8" action="#" class="gen-form" method="post">
-                    <fieldset>
-                        <label for="login">邮箱地址/手机号码</label>
-                        <input autocapitalize="off" autocorrect="off" class="text-input" id="login" name="login" tabindex="1" type="text" value="" placeholder="邮箱地址/手机号码" />
-                    </fieldset>
+        <div class="row">
+            <a href="/"><img alt="电子圈" src="man/images/app_logo.png" /></a>
+            <hr/>
+        </div>
 
-                    <fieldset>
-                        <label for="password">密码 <a href="/password_resets/new">忘记?</a></label>
-                        <input class="text-input" id="password" name="password" tabindex="2" type="password" value="" placeholder="密码"/>
-                    </fieldset>
+        <div class="row login-main">
+            <div class="col-sm-4 col-sm-offset-3" style="border-right: 1px solid #FFFFFF;">
+                <form role="form">
+                    <div class="form-group">
+                        <label for="account">邮箱地址/手机号码</label>
+                        <input type="email" class="form-control" id="account" placeholder="邮箱地址/手机号码">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">密码</label> <a href="#">忘记?</a>
+                        <input type="password" class="form-control" id="password" placeholder="密码">
+                    </div>
                     <button class="btn btn-default">登入</button>
                 </form>
             </div>
 
-            <div class="sign-connections">
-                <p>社交帐号直接登录</p>
+            <div class="col-sm-3" style="margin-left: 20px;">
+                <p><label>社交帐号直接登录</label></p>
                 <a href=""><img src="man/images/icon/weibo_logo_48x48.png" alt=""/></a>
             </div>
-            <p class="sign-notamember">还没有账号? <a href="/signup">现在注册</a></p>
+
+        </div>
+        <div class="row col-sm-10">
+            <p class="pull-right">还没有账号? <a href="register.html">现在注册»</a></p>
         </div>
     </div>
 </body>
