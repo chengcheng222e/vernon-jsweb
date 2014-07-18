@@ -1,0 +1,158 @@
+<!--Created by IntelliJ IDEA.-->
+<!--User: chenyuan-->
+<!--Date: 4/25/14-->
+<!--Time: 15:43-->
+<!--To change this template use File | Settings | File Templates.-->
+<html lang="zh-cn">
+<head>
+    <title>安全设置</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="man/plugin/bootstrap/3.1.1/css/bootstrap.css"/>
+    <link rel="stylesheet" href="man/plugin/bootstrap/3.1.1/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="man/css/theme.css"/>
+</head>
+<body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <!--响应式后的菜单-->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">响应式后的菜单</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!--<a class="navbar-brand" href="#"><img src="http://www.zhihu.com/static/img/sticky_header/new_logo.png" alt="知乎"/></a>-->
+                <a class="navbar-brand" href="/">电子圈</a>
+            </div>
+
+            <div class="navbar-collapse collapse">
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control search" id="global-search" placeholder="输入关键字...">
+                    </div>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li style="margin-right: 80px;">
+                        <button type="button" class="btn btn-info publish-btn" data-toggle="modal" data-target="#publish-tweet-box">
+                            <span class="glyphicon glyphicon-edit"></span> 发布
+                        </button>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle navbar-avatar" data-toggle="dropdown">
+                            <img src="man/images/avatars/avatar1.png" alt="陈袁" width="25px" height="25px"/>
+                            陈袁 <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">个人主页</a></li>
+                            <li><a href="#">私信</a></li>
+                            <li><a href="#">设置</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">登出</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </div>
+
+    <div class="container wrapper">
+
+        <div class="row">
+            <!--dashboard-->
+            <div class="col-sm-4 blog-sidebar">
+                <div class="sidebar-module">
+                    <ul class="nav nav-pills nav-stacked dashboard" style="max-width: 300px;">
+                        <li><a href="/index">个人动态 </a></li>
+                        <li><a href="javascript:;">资料设置 </a></li>
+                        <li><a href="javascript:;">安全设置 <span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-module">
+                    <ul class="dashboard foot-model" style="max-width: 300px;">
+                        <li>&copy; 2014 电子圈</li>
+                    </ul>
+                </div>
+            </div>
+            <!--/.blog-sidebar-->
+
+            <!--******** 正文 ********-->
+            <div class="col-sm-8">
+                <div class="row">
+
+
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">修改密码</h3>
+                        </div>
+                        <div class="panel-body">
+                            <form class="form-horizontal" role="form">
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">原始密码</label>
+                                    <div class="col-sm-10">
+                                        <input type="password" class="form-control" value="">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">新密码</label>
+                                    <div class="col-sm-10">
+                                        <input type="password" class="form-control" value="">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">重复新密码</label>
+                                    <div class="col-sm-10">
+                                        <input type="password" class="form-control" value="">
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-primary">修改</button>
+                            </form>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div><!-- /.book-main -->
+        </div><!-- /.row -->
+    </div> <!-- /container -->
+
+    <!--publish-tweet-box-->
+    <!-- Modal -->
+    <div class="modal fade" id="publish-tweet-box" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">发布推文</h4>
+                </div>
+                <div class="modal-body">
+                    <div contenteditable="true" class="tweet-box"></div>
+                </div>
+                <div class="modal-footer">
+                    <div class="nav nav-pills pull-left">
+                        <form class="form-inline" action="/upload" method="post" enctype="multipart/form-data" id="tweet-box-upload-form">
+                            <input type="file" name="fileUpload" id="fileUpload"/>
+                        </form>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="tweet-box-upload">上传</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" name="add" class="btn btn-danger">发布</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+</body>
+</html>
