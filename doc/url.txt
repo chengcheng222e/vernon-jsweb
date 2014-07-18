@@ -1,11 +1,18 @@
 
 http://dianziquan.sturgeon.mopaas.com/resources/dianziquan/index.html
 
+http://dianziquan.sturgeon.mopaas.com/resources/dianziquan/master.html
+
+http://dianziquan.sturgeon.mopaas.com/resources/dianziquan/profile.html
+
+http://dianziquan.sturgeon.mopaas.com/resources/dianziquan/savety.html
+
+http://dianziquan.sturgeon.mopaas.com/resources/dianziquan/visitor.html
+
 http://dianziquan.sturgeon.mopaas.com/resources/dianziquan/login.html
 
 http://dianziquan.sturgeon.mopaas.com/resources/dianziquan/register.html
 
 http://dianziquan.sturgeon.mopaas.com/plugin/jbox-v2.3/jbox-demo.html
-
 
 http://dianziquan.sturgeon.mopaas.com/resources/daijing621.com/index.html

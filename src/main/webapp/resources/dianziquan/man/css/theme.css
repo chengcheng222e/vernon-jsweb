@@ -71,11 +71,15 @@ h6, .h6 {
     list-style: none;
 }
 
-/* ========================= login ========================= */
+/* ========================= login/ register/ forget/ ========================= */
 
 .login-main{
     margin-top: 40px;
     margin-bottom: 40px;
+}
+
+.forget-info {
+    margin: 20px;
 }
 
 /* ========================= dashboard ========================= */
