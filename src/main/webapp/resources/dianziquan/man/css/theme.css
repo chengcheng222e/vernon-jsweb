@@ -176,6 +176,22 @@ h6, .h6 {
     border: 1px solid #dddddd;
 }
 
+.upload-image {
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.upload-image:hover {
+    cursor: pointer;
+    background-color: #3276b1;
+    color: #FFFFFF;
+}
+
+.modal-body .thumbnail-images{
+    margin: 5px;
+}
+
 .comment-floor-num{
     color: #000000;
     font-size: 20px;
