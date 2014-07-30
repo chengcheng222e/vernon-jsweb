@@ -1,0 +1,205 @@
+/*
+ * Globals
+ */
+
+body {
+    font-family: 12px/1.125 Arial, Helvetica, sans-serif;
+    background-image: url("../images/bg.png");
+    background-repeat: no-repeat;
+    background-color: #C0DEED;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    margin-top: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    color: #333;
+}
+
+.margin-left-5px {
+    margin-left: 5px;
+}
+
+.margin-right-5px {
+    margin-right: 5px;
+}
+
+.margin-top-5px {
+    margin-top: 5px;
+}
+
+.margin-bottom-5px {
+    margin-bottom: 5px;
+}
+
+/*
+ * Override Bootstrap's default container.
+ */
+
+@media (min-width: 1200px) {
+    .container {
+        width: 970px;
+    }
+}
+
+.wrapper {
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.search {
+    border-radius: 18px;
+}
+
+.modal-dialog .modal-content .modal-header {
+}
+
+.sidebar-module {
+    margin-bottom: 25px;
+}
+
+.foot-model {
+    padding: 5px 5px 5px 5px;
+}
+
+.foot-model li {
+    list-style: none;
+}
+
+/* ========================= login/ register/ forget/ ========================= */
+
+.login-main{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.forget-info {
+    margin: 20px;
+}
+
+/* ========================= dashboard ========================= */
+
+.sidebar-module .dashboard {
+    background-color: #FFFFFF;
+    border-radius: 5px;
+}
+
+.tweet-box {
+    border: 1px solid #dddddd;
+    width: auto;
+    height: 100px;
+    padding: 8px;
+    display: block;
+    overflow-y: auto;
+    word-wrap: break-word;
+    border-radius: 5px;
+}
+
+/* ========================= navbar ========================= */
+.navbar-avatar {
+    padding-bottom: 10px !important;
+}
+
+.publish-btn {
+    margin-top: 10px;
+    padding: 5px 5px;
+}
+
+/* ========================= tweet ========================= */
+
+.nickname {
+    color: #000000 !important;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 16px;
+    margin-bottom: 10px;
+}
+
+.nickname:hover {
+    color: #0a8cd2;
+    text-decoration: none;
+}
+
+.tweet-images {
+    margin: 5px;
+}
+
+.tweet-images img {
+    margin: 1px 5px 0px 0px;
+}
+
+.tweet-tags{
+    margin-top: 10px;
+}
+
+.tweet-comment, .tweet-comment-operate{
+    margin-left: 55px;
+}
+
+.tweet-comment-operate{
+    margin-top: 5px;
+    color: #000000;
+    font-size: 12px;
+}
+
+.tweet-comment-operate a {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.tweet-comment-reply{
+    margin-left: 55px;
+    margin-top: 5px;
+}
+
+.tweet-comment-reply input{
+    margin-bottom: 5px;
+}
+
+.tweet-forward{
+    margin-left: 70px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.panel-footer {
+    padding: 2px;
+}
+
+.avatar > img {
+    border-radius: 5px;
+    border: 1px solid #dddddd;
+}
+
+.upload-image {
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.upload-image:hover {
+    cursor: pointer;
+    background-color: #3276b1;
+    color: #FFFFFF;
+}
+
+.modal-body .thumbnail-images{
+    margin: 5px;
+}
+
+.comment-floor-num{
+    color: #000000;
+    font-size: 20px;
+}
+
+
+/* ========================= alert ========================= */
+.system-alert-messge {
+    position:fixed;
+    width: 500px;
+}
