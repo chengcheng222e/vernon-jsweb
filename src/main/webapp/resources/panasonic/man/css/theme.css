@@ -75,10 +75,13 @@ h6, .h6 {
 
 .panel-body dl{
     margin-bottom: 0px;
-    border-bottom: 1px dotted #dddddd;
     /*line-height: 100px;*/
     padding: 5px;
     font-size: 12px;
+}
+
+dl + dl{
+    border-top: 1px dotted #dddddd;
 }
 
 .category dt{
