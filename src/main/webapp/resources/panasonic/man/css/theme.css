@@ -75,6 +75,9 @@ h6, .h6 {
 
 .panel-body dl{
     margin-bottom: 0px;
+    border-bottom: 1px dotted #dddddd;
+    /*line-height: 100px;*/
+    padding: 5px;
 }
 
 .category dt{
@@ -86,7 +89,7 @@ h6, .h6 {
 }
 
 .category dd em {
-    float: left;
+    /*float: left;*/
     font-style: normal;
 }
 
