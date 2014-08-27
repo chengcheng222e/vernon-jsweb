@@ -4,16 +4,38 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title>Untitled Document</title>
-		<script type="text/javascript" src="js/jquery-1.8.1.js"></script>
-		<script type="text/javascript" src="js/global.js"></script>
+		<script type="text/javascript" src="../../main/webapp/js/global/jquery/1.8/jquery-1.8.1.js"></script>
 	</head>
 	
 	<body>
-		<script type="text/javascript">
-			var str = '！我si你。' ;
-			console.log("str'length : " + strLength(str)) ;
-			console.log("str'length : " + str.strLength()) ;
-		</script>
+
+        <script>
+
+            name = "Robben";
+            function Demo() {
+                var name = "Robben in local";
+                var xxx = "xxx";
+                this.name = "Robben in object";
+                this.sayHello1 = function() {
+                    console.info(name);
+                }
+                this.sayHello2 = function() {
+                    console.info(this.name);
+                };
+                this.sayHello3 = function() {
+                    return (function(){console.info(this.name);})();
+                }
+            }
+            Demo.name = "Robben in classlike object"; //真不巧，函数有个默认的只读name属性,属性值为函数名
+
+            console.log('Demo.name = ' + Demo.name);
+            console.log('Demo.xxx = ' + Demo.xxx);
+
+            object = new Demo();
+            object.sayHello1();
+            object.sayHello2();
+            object.sayHello3();
+        </script>
 	</body>
 	
 </html>

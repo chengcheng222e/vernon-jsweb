@@ -3,8 +3,59 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
+    <script src="../../../main/webapp/js/global/jquery/1.8/jquery-1.8.1.js"></script>
+    <script src="../../../main/webapp/plugin/select2/select2-3.5.1/select2.js"></script>
+    <link rel="stylesheet" href="../../../main/webapp/plugin/select2/select2-3.5.1/select2.css"/>
 </head>
 <body>
 
+Select2 Demo <br/>
+
+<form action="http://www.dianziq.com" method="post">
+    <input name="tag" type="text" style="width: 500px;" value=""/> <br/>
+    <input type="submit" value="SUBMIT"/>
+</form>
+
+<script>
+    $(function () {
+
+        $('input[name="tag"]').select2({
+            placeholder: "输入标签",
+            minimumInputLength: 1,
+            tags: true,
+            tokenSeparators: [",", " "],
+            ajax: {
+                url: 'data.json',
+                dataType: "json",
+                data: function (term, page) {
+                    return {
+                        q: term
+                    };
+                },
+                results: function (data, page) {
+                    var results = [];
+                    $.each(data, function(index, item){
+                        results.push({
+                            id: item.name,
+                            text: item.name
+                        });
+                    });
+                    return {
+                        results: results
+                    };
+                },
+                separator: "|"
+            }
+        });
+
+
+//        $("input").select2({
+//            placeholder: "Select report type",
+//            allowClear: true,
+//            data: [{id: 0, text: 'story'},{id: 1, text: 'bug'},{id: 2, text: 'task'}]
+//        });
+
+    })
+</script>
 </body>
 </html>
