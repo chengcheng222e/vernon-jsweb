@@ -80,7 +80,7 @@ h6, .h6 {
     font-size: 12px;
 }
 
-dl + dl{
+dl.category + dl.category{
     border-top: 1px dotted #dddddd;
 }
 
@@ -112,3 +112,23 @@ dl + dl{
 .pruduct-list {
     font-size: 13px;
 }
+
+.pruduct-picture{
+    margin-bottom: 10px;
+}
+
+.pruduct-picture img{
+    margin-bottom: 5px;
+}
+
+/* 产品基本信息*/
+
+.product-base-info dt{
+    width: 90px;
+    color: #CC0000;
+}
+
+.product-base-info dd{
+    margin-left: 100px;
+}
+
