@@ -1,0 +1,96 @@
+/*
+ * Globals
+ */
+
+body {
+    font-family: 12px/1.125 Arial, Helvetica, sans-serif;
+    background-repeat: no-repeat;
+    background-color: #F7F6F2;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    margin-top: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    color: #333;
+}
+
+.margin-left-5px {
+    margin-left: 5px;
+}
+
+.margin-right-5px {
+    margin-right: 5px;
+}
+
+.margin-top-5px {
+    margin-top: 5px;
+}
+
+.margin-bottom-5px {
+    margin-bottom: 5px;
+}
+
+/*
+ * Override Bootstrap's default container.
+ */
+
+@media (min-width: 1200px) {
+    .container {
+        width: 970px;
+    }
+}
+
+.wrapper {
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.search {
+    border-radius: 18px;
+}
+
+.modal-dialog .modal-content .modal-header {
+}
+
+.sidebar-module {
+    margin-bottom: 25px;
+}
+
+/* ========================= navbar ========================= */
+.navbar-avatar {
+    padding-bottom: 10px !important;
+}
+
+.panel-body dl{
+    margin-bottom: 0px;
+}
+
+.category dt{
+    width: 70px;
+}
+
+.category dd{
+    margin-left: 80px;
+}
+
+.category dd em {
+    float: left;
+    font-style: normal;
+}
+
+.category dd em :hover{
+    color: #FF0000;
+}
+
+.category dd a {
+    white-space: nowrap;
+    margin-right: 16px;
+    color: #666;
+    text-decoration: none;
+}
