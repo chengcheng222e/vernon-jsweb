@@ -23,3 +23,5 @@ http://dianziquan.sturgeon.mopaas.com/resources/daijing621.com/index.html
 http://dianziquan.sturgeon.mopaas.com/resources/panasonic/index.html
 
 http://dianziquan.sturgeon.mopaas.com/resources/panasonic/detail_document.html
+
+http://dianziquan.sturgeon.mopaas.com/plugin/scratch/index.html
